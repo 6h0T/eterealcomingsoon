@@ -1,0 +1,28 @@
+{
+  "metadata": {
+    "title": "Coming Soon",
+    "description": "A new era of Mu Online is about to begin. Get ready for the adventure."
+  },
+  "coming_soon": {
+    "title": "COMING SOON IN MAY",
+    "countdown": {
+      "days": "Days",
+      "hours": "Hours",
+      "minutes": "Minutes",
+      "seconds": "Seconds"
+    },
+    "social": {
+      "follow": "Follow us to learn more"
+    },
+    "footer": {
+      "rights": "All rights reserved"
+    }
+  },
+  "blog": {
+    "title": "MU Online Blog",
+    "meta_description": "Guides, tips and strategies for MU Online Season 6 Episode 3. Builds, experience spots, events and more.",
+    "read_more": "Read more",
+    "back_to_blog": "Back to blog",
+    "back_to_home": "Back to home"
+  }
+}
