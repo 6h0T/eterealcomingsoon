@@ -7,11 +7,14 @@ import FloatingLogo from "./floating-logo"
 import LanguageSelector from "./language-selector"
 import { getDictionary, type Dictionary } from "../dictionaries"
 
-export default async function ComingSoonPage({
-  params,
-}: {
-  params: { lang: string }
-}) {
+type Props = {
+  params: {
+    lang: string
+  }
+  searchParams: { [key: string]: string | string[] | undefined }
+}
+
+export default async function ComingSoonPage({ params, searchParams }: Props) {
   const dict = await getDictionary(params.lang as "es" | "en" | "pt") as Dictionary
 
   return (
