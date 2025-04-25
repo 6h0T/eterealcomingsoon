@@ -7,14 +7,15 @@ import FloatingLogo from "./floating-logo"
 import LanguageSelector from "./language-selector"
 import { getDictionary, type Dictionary } from "../dictionaries"
 
-type Props = {
+interface PageProps {
   params: {
     lang: string
   }
   searchParams: { [key: string]: string | string[] | undefined }
 }
 
-export default async function ComingSoonPage({ params, searchParams }: Props) {
+export default async function ComingSoonPage(props: PageProps) {
+  const { params } = props
   const dict = await getDictionary(params.lang as "es" | "en" | "pt") as Dictionary
 
   return (
